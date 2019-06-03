@@ -10,6 +10,7 @@ module.exports = class MenuController {
         choices: [
           "Add new contact",
           "Get time and date",
+          "Remind me",
           "Exit"
         ]
       }
@@ -27,6 +28,9 @@ module.exports = class MenuController {
          case "Get time and date":
            this.getDate();
            break;
+        case "Remind me":
+          console.log(this.remindMe());
+          break;
          case "Exit":
            this.exit();
          default:
@@ -59,6 +63,10 @@ module.exports = class MenuController {
 
    getContactCount(){
     return this.contacts.length;
+   }
+
+   remindMe(){
+    return "Learning is a life-long pursuit";
    }
 
    exit(){
