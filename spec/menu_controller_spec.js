@@ -3,7 +3,4 @@ const MenuController = require("../controllers/MenuController");
    beforeEach(() => {
       this.menu = new MenuController();
     });
-   describe("#getContactCount()", () => {
-
-   });
  });
